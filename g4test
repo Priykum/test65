@@ -1,0 +1,67 @@
+/* Name: SmoothTheme
+ * Description: A smooth, rounded-corner theme with transparent elements, clean icons, and additional features for Discord.
+ * Version: 1.0.0
+ * Author: GPT-4
+ */
+
+/* Smooth transitions */
+* {
+    transition: all 0.3s ease;
+}
+
+/* Rounded corners */
+.channelTextArea-2P3-9S,
+.userPopout-3XzG_A,
+.message-2qRu38,
+.container-3auIfb {
+    border-radius: 16px;
+}
+
+/* Transparent elements */
+.theme-dark .container-3auIfb,
+.theme-dark .message-2qRu38,
+.theme-dark .userPopout-3XzG_A,
+.theme-dark .channelTextArea-2P3-9S {
+    background-color: rgba(54, 57, 63, 0.8) !important;
+}
+
+/* Clean icons */
+.icon-3D60kU {
+    filter: brightness(1.5) contrast(1.5);
+}
+
+/* Clean text */
+.markup-2BOw-j {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(47, 49, 54, 0.8);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(79, 84, 92, 0.8);
+    border-radius: 10px;
+}
+
+/* Additional features */
+/* Add a separator between server icons and channel list */
+.guilds-1SWlCJ:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
